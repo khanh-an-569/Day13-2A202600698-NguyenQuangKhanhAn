@@ -1,6 +1,6 @@
 {
   "provider": "openai",
-  "model": "gpt-5.4-nano",
+  "model": "mistral-medium-latest",
   "model_price_tier": "standard",
   "max_steps": 5,
   "loop_guard": true,
