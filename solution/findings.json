@@ -71,6 +71,16 @@
       },
       "root_cause": "verbose_system was set to true and max_completion_tokens was set to 2000.",
       "suggested_fix": "Set verbose_system to false and reduce max_completion_tokens to 1000."
+    },
+    {
+      "fault_class": "prompt_injection",
+      "evidence": {
+        "metric": "injection_vulnerability",
+        "observed": "Agent obeys fake prices or system override commands embedded in customer order notes (GHI CHÚ)",
+        "trace_ids": []
+      },
+      "root_cause": "The model treats order notes as instructions rather than raw data, and there was no wrapper-level note sanitization.",
+      "suggested_fix": "Sanitize the order notes in wrapper.py by stripping price numbers and specify in system prompt to treat notes strictly as static data."
     }
   ]
 }

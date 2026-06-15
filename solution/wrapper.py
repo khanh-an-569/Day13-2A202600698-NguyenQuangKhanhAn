@@ -92,6 +92,9 @@ def mitigate(call_next, question, config, context):
                     note_part = parts[1]
                     for pattern in directives:
                         note_part = re.sub(pattern, "", note_part, flags=re.IGNORECASE)
+                    # Strip all digits (fake prices) and currency units from the note to prevent price override
+                    note_part = re.sub(r"\d+[\d.,]*", "", note_part)
+                    note_part = re.sub(r"(triệu|tr|trieu|vnd|đồng|đ|k)\b", "", note_part, flags=re.IGNORECASE)
                     sanitized_question = parts[0] + marker + note_part
                     break
 
