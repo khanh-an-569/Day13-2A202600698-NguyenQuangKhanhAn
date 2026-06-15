@@ -7,9 +7,7 @@
       "evidence": {
         "metric": "error_rate",
         "observed": "macbook check_stock returned in_stock=false despite availability due to config catalog_override",
-        "trace_ids": [
-          "req-1234abcd"
-        ]
+        "trace_ids": []
       },
       "root_cause": "The default config.json has a catalog_override blocking Macbook sales and normalize_unicode is disabled causing failures on accented Vietnamese cities.",
       "suggested_fix": "Remove catalog_override from config.json and enable normalize_unicode."
@@ -19,12 +17,60 @@
       "evidence": {
         "metric": "pii_count",
         "observed": "Agent printed customer email an.nguyen@gmail.com in pub-13",
-        "trace_ids": [
-          "req-5678efgh"
-        ]
+        "trace_ids": []
       },
       "root_cause": "Agent default prompt echoes back input contact information and redact_pii is disabled in config.",
       "suggested_fix": "Enable redact_pii in config, implement regex-based redaction in wrapper.py, and instruct agent in prompt.txt never to echo contact details."
+    },
+    {
+      "fault_class": "infinite_loop",
+      "evidence": {
+        "metric": "loop_count",
+        "observed": "status=loop and status=max_steps was returned on multi-tool queries like pub-011 and pub-018",
+        "trace_ids": []
+      },
+      "root_cause": "loop_guard was set to false and max_steps was set to 12, allowing infinite tool call loops.",
+      "suggested_fix": "Enable loop_guard: true and reduce max_steps to 5."
+    },
+    {
+      "fault_class": "error_spike",
+      "evidence": {
+        "metric": "tool_error_rate",
+        "observed": "Tool calls failed intermittently with 18% error rate",
+        "trace_ids": []
+      },
+      "root_cause": "tool_error_rate was configured to 0.18 and retry mechanism was disabled.",
+      "suggested_fix": "Enable retry with max_attempts: 3 in config.json."
+    },
+    {
+      "fault_class": "latency_spike",
+      "evidence": {
+        "metric": "latency_p95_ms",
+        "observed": "High latency on repeated queries and long conversations",
+        "trace_ids": []
+      },
+      "root_cause": "Caching was disabled and context_size was set to 8, leading to heavy history context loading.",
+      "suggested_fix": "Enable cache and decrease context_size to 3."
+    },
+    {
+      "fault_class": "quality_drift",
+      "evidence": {
+        "metric": "correctness_drift",
+        "observed": "Quality degradation on later turns in multi-turn sessions",
+        "trace_ids": []
+      },
+      "root_cause": "session_drift_rate was set to 0.06 and context_reset_every was set to 0, causing history pollution.",
+      "suggested_fix": "Set context_reset_every to 1 in config.json to reset session context."
+    },
+    {
+      "fault_class": "cost_blowup",
+      "evidence": {
+        "metric": "token_count",
+        "observed": "Excessive token usage and high API costs",
+        "trace_ids": []
+      },
+      "root_cause": "verbose_system was set to true and max_completion_tokens was set to 2000.",
+      "suggested_fix": "Set verbose_system to false and reduce max_completion_tokens to 1000."
     }
   ]
 }
