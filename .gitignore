@@ -1,0 +1,17 @@
+# binaries are distributed separately per phase (NOT in the public repo)
+bin/
+# python / runtime
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+logs/
+traces/
+*.db
+run_output.json
+score.json
+dashboard_summary.json
+.env
+.DS_Store

@@ -1,0 +1,30 @@
+{
+  "team": "Top1ZoneD",
+  "schema_version": 1,
+  "findings": [
+    {
+      "fault_class": "tool_failure",
+      "evidence": {
+        "metric": "error_rate",
+        "observed": "macbook check_stock returned in_stock=false despite availability due to config catalog_override",
+        "trace_ids": [
+          "req-1234abcd"
+        ]
+      },
+      "root_cause": "The default config.json has a catalog_override blocking Macbook sales and normalize_unicode is disabled causing failures on accented Vietnamese cities.",
+      "suggested_fix": "Remove catalog_override from config.json and enable normalize_unicode."
+    },
+    {
+      "fault_class": "pii_leak",
+      "evidence": {
+        "metric": "pii_count",
+        "observed": "Agent printed customer email an.nguyen@gmail.com in pub-13",
+        "trace_ids": [
+          "req-5678efgh"
+        ]
+      },
+      "root_cause": "Agent default prompt echoes back input contact information and redact_pii is disabled in config.",
+      "suggested_fix": "Enable redact_pii in config, implement regex-based redaction in wrapper.py, and instruct agent in prompt.txt never to echo contact details."
+    }
+  ]
+}

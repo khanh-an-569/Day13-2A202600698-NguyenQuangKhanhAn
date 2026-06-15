@@ -1,0 +1,31 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.4-nano",
+  "model_price_tier": "standard",
+  "max_steps": 5,
+  "loop_guard": true,
+  "temperature": 0.1,
+  "context_size": 3,
+  "verbose_system": false,
+  "timeout_ms": 10000,
+  "max_completion_tokens": 1000,
+  "retry": {
+    "enabled": true,
+    "max_attempts": 3,
+    "backoff_ms": 100
+  },
+  "cache": {
+    "enabled": true
+  },
+  "normalize_unicode": true,
+  "redact_pii": true,
+  "session_drift_rate": 0.0,
+  "context_reset_every": 1,
+  "tool_error_rate": 0.0,
+  "catalog_override": {},
+  "route_rules": [],
+  "planner": false,
+  "verify": true,
+  "self_consistency": 1,
+  "tool_budget": 3
+}

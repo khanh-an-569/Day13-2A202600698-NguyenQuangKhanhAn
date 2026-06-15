@@ -1,0 +1,277 @@
+Author: Python Software Foundation
+Commands:
+- py
+- python
+- pythonw
+- pyw
+Copyright: 'Copyright (c) 2001-2024 Python Software Foundation. All Rights Reserved.
+
+  Copyright (c) 2000 BeOpen.com. All Rights Reserved.
+
+  Copyright (c) 1995-2001 Corporation for National Research Initiatives. All Rights
+  Reserved.
+
+  Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam. All Rights Reserved.'
+CopyrightUrl: https://www.python.org/about/legal/
+Documentations:
+- DocumentLabel: Documentation
+  DocumentUrl: https://www.python.org/doc/
+FileExtensions:
+- py
+- pyc
+- pyd
+- pyo
+- pyw
+- pyz
+- pyzw
+Icons:
+- IconFileType: ico
+  IconResolution: custom
+  IconSha256: ebbc52305cda5a9fb7c108a2cc9466e7e72a33841d2c7935f6a48b1653fc1373
+  IconTheme: default
+  IconUrl: https://cdn.winget.microsoft.com/icons/ebbc52305cda5a9fb7c108a2cc9466e7e72a33841d2c7935f6a48b1653fc1373.ico
+InstallerType: burn
+Installers:
+- AppsAndFeaturesEntries:
+  - DisplayName: Python 3.12.10 (32-bit)
+    DisplayVersion: 3.12.10150.0
+    ProductCode: '{d582057f-941e-4f0c-9219-b3ac49a5078d}'
+    UpgradeCode: '{7D426D03-49F7-5C13-8BB0-53574B728B6E}'
+  Architecture: x86
+  InstallerSha256: FDFE385B94F5B8785A0226A886979527FD26EB65DEFDBF29992FD22CC4B0E31E
+  InstallerSwitches:
+    Custom: InstallAllUsers=0 PrependPath=1
+    InstallLocation: DefaultJustForMeTargetDir=<INSTALLPATH>
+  InstallerUrl: https://www.python.org/ftp/python/3.12.10/python-3.12.10.exe
+  ProductCode: '{d582057f-941e-4f0c-9219-b3ac49a5078d}'
+  Scope: user
+- AppsAndFeaturesEntries:
+  - DisplayName: Python 3.12.10 (32-bit)
+    DisplayVersion: 3.12.10150.0
+    ProductCode: '{d582057f-941e-4f0c-9219-b3ac49a5078d}'
+    UpgradeCode: '{7D426D03-49F7-5C13-8BB0-53574B728B6E}'
+  Architecture: x86
+  ElevationRequirement: elevatesSelf
+  InstallerSha256: FDFE385B94F5B8785A0226A886979527FD26EB65DEFDBF29992FD22CC4B0E31E
+  InstallerSwitches:
+    Custom: InstallAllUsers=1 PrependPath=1
+    InstallLocation: DefaultAllUsersTargetDir=<INSTALLPATH>
+  InstallerUrl: https://www.python.org/ftp/python/3.12.10/python-3.12.10.exe
+  ProductCode: '{d582057f-941e-4f0c-9219-b3ac49a5078d}'
+  Scope: machine
+- AppsAndFeaturesEntries:
+  - DisplayName: Python 3.12.10 (64-bit)
+    DisplayVersion: 3.12.10150.0
+    ProductCode: '{b6ce88eb-2ce3-4d91-8efc-425ae1f48caf}'
+    UpgradeCode: '{114AEC44-152B-5746-952F-F20CE3CAB54A}'
+  Architecture: x64
+  InstallerSha256: 67B5635E80EA51072B87941312D00EC8927C4DB9BA18938F7AD2D27B328B95FB
+  InstallerSwitches:
+    Custom: InstallAllUsers=0 PrependPath=1
+    InstallLocation: DefaultJustForMeTargetDir=<INSTALLPATH>
+  InstallerUrl: https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe
+  ProductCode: '{b6ce88eb-2ce3-4d91-8efc-425ae1f48caf}'
+  Scope: user
+- AppsAndFeaturesEntries:
+  - DisplayName: Python 3.12.10 (64-bit)
+    DisplayVersion: 3.12.10150.0
+    ProductCode: '{b6ce88eb-2ce3-4d91-8efc-425ae1f48caf}'
+    UpgradeCode: '{114AEC44-152B-5746-952F-F20CE3CAB54A}'
+  Architecture: x64
+  ElevationRequirement: elevatesSelf
+  InstallerSha256: 67B5635E80EA51072B87941312D00EC8927C4DB9BA18938F7AD2D27B328B95FB
+  InstallerSwitches:
+    Custom: InstallAllUsers=1 PrependPath=1
+    InstallLocation: DefaultAllUsersTargetDir=<INSTALLPATH>
+  InstallerUrl: https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe
+  ProductCode: '{b6ce88eb-2ce3-4d91-8efc-425ae1f48caf}'
+  Scope: machine
+- AppsAndFeaturesEntries:
+  - DisplayName: Python 3.12.10 (ARM64)
+    DisplayVersion: 3.12.10150.0
+    ProductCode: '{283f8874-bfd9-4aa8-a08c-fd438a653175}'
+    UpgradeCode: '{1C6E0C70-86FC-5723-BB61-9555AC97B97E}'
+  Architecture: arm64
+  InstallerSha256: 377AC8FD478987940088E879441E702A71B53164D2A1E6F1D51FF77A7E470258
+  InstallerSwitches:
+    Custom: InstallAllUsers=0 PrependPath=1
+    InstallLocation: DefaultJustForMeTargetDir=<INSTALLPATH>
+  InstallerUrl: https://www.python.org/ftp/python/3.12.10/python-3.12.10-arm64.exe
+  ProductCode: '{283f8874-bfd9-4aa8-a08c-fd438a653175}'
+  Scope: user
+- AppsAndFeaturesEntries:
+  - DisplayName: Python 3.12.10 (ARM64)
+    DisplayVersion: 3.12.10150.0
+    ProductCode: '{283f8874-bfd9-4aa8-a08c-fd438a653175}'
+    UpgradeCode: '{1C6E0C70-86FC-5723-BB61-9555AC97B97E}'
+  Architecture: arm64
+  ElevationRequirement: elevatesSelf
+  InstallerSha256: 377AC8FD478987940088E879441E702A71B53164D2A1E6F1D51FF77A7E470258
+  InstallerSwitches:
+    Custom: InstallAllUsers=1 PrependPath=1
+    InstallLocation: DefaultAllUsersTargetDir=<INSTALLPATH>
+  InstallerUrl: https://www.python.org/ftp/python/3.12.10/python-3.12.10-arm64.exe
+  ProductCode: '{283f8874-bfd9-4aa8-a08c-fd438a653175}'
+  Scope: machine
+License: PSF-2.0
+LicenseUrl: https://docs.python.org/3/license.html
+Localization:
+- Author: Python Software Foundation
+  Copyright: 'Copyright (c) 2001-2024 Python Software Foundation. All Rights Reserved.
+
+    Copyright (c) 2000 BeOpen.com. All Rights Reserved.
+
+    Copyright (c) 1995-2001 Corporation for National Research Initiatives. All Rights
+    Reserved.
+
+    Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam. All Rights
+    Reserved.'
+  CopyrightUrl: https://www.python.org/about/legal/
+  Documentations:
+  - DocumentLabel: "\u6587\u6863"
+    DocumentUrl: https://www.python.org/doc/
+  License: PSF-2.0
+  LicenseUrl: https://docs.python.org/3/license.html
+  PackageLocale: zh-CN
+  PackageName: Python 3.12
+  PackageUrl: https://www.python.org/
+  PrivacyUrl: https://www.python.org/privacy/
+  Publisher: Python Software Foundation
+  PublisherSupportUrl: https://www.python.org/about/help/
+  PublisherUrl: https://www.python.org/
+  ReleaseNotesUrl: https://docs.python.org/release/3.12.10/whatsnew/changelog.html#python-3-12-10
+  ShortDescription: "Python \u662F\u4E00\u79CD\u7F16\u7A0B\u8BED\u8A00\uFF0C\u53EF\u4EE5\u8BA9\u60A8\u66F4\u5FEB\u5730\u5DE5\u4F5C\uFF0C\u66F4\u6709\u6548\u5730\u6574\u5408\u60A8\u7684\u7CFB\u7EDF\u3002"
+  Tags:
+  - python
+  - python3
+  - "\u7F16\u7A0B"
+  - "\u7F16\u7A0B\u8BED\u8A00"
+  - "\u811A\u672C"
+  - "\u8BED\u8A00"
+ManifestType: merged
+ManifestVersion: 1.10.0
+Moniker: python3.12
+PackageIdentifier: Python.Python.3.12
+PackageLocale: en-US
+PackageName: Python 3.12
+PackageUrl: https://www.python.org/
+PackageVersion: 3.12.10
+PrivacyUrl: https://www.python.org/privacy/
+Publisher: Python Software Foundation
+PublisherSupportUrl: https://www.python.org/about/help/
+PublisherUrl: https://www.python.org/
+ReleaseDate: 2025-04-08
+ReleaseNotes: "macOS\n- gh-124111: Update macOS installer to use Tcl/Tk 8.6.16.\n-
+  gh-131423: Update macOS installer to use OpenSSL 3.0.16. Patch by B\xE9n\xE9dikt
+  Tran.\n- gh-131025: Update macOS installer to ship with SQLite 3.49.1.\n- gh-91132:
+  Update macOS installer to use ncurses 6.5.\nWindows\n- gh-131423: Update bundled
+  version of OpenSSL to 3.0.16. The new build also disables uplink support, which
+  may be relevant to embedders but has no impact on normal use.\n- gh-131025: Update
+  Windows installer to ship with SQLite 3.49.1.\n- gh-131020: pylauncher correctly
+  detects a BOM when searching for the shebang. Fix by Chris Eibl.\nTools/Demos\n-
+  gh-131852: msgfmt no longer adds the POT-Creation-Date to generated .mo files for
+  consistency with GNU msgfmt.\n- gh-85012: Correctly reset msgctxt when compiling
+  messages in msgfmt.\nTests\n- gh-131050: test_ssl.test_dh_params is skipped if the
+  underlying TLS library does not support finite-field ephemeral Diffie-Hellman.\n-
+  gh-119727: Add --single-process command line option to Python test runner (regrtest).
+  Patch by Victor Stinner.\nSecurity\n- gh-131809: Update bundled libexpat to 2.7.1\n-
+  gh-131261: Upgrade to libexpat 2.7.0\n- gh-127371: Avoid unbounded buffering for
+  tempfile.SpooledTemporaryFile.writelines(). Previously, disk spillover was only
+  checked after the lines iterator had been exhausted. This is now done after each
+  line is written.\n- gh-121284: Fix bug in the folding of rfc2047 encoded-words when
+  flattening an email message using a modern email policy. Previously when an encoded-word
+  was too long for a line, it would be decoded, split across lines, and re-encoded.
+  But commas and other special characters in the original text could be left unencoded
+  and unquoted. This could theoretically be used to spoof header lines using a carefully
+  constructed encoded-word if the resulting rendered email was transmitted or re-parsed.\nLibrary\n-
+  gh-116608: undeprecate functional API for importlib.resources\n- gh-132075: Fix
+  possible use of socket address structures with uninitialized members. Now all structure
+  members are initialized with zeroes by default.\n- gh-132002: Fix crash when deallocating
+  contextvars.ContextVar with weird unahashable string names.\n- gh-131668: socket:
+  Fix code parsing AF_BLUETOOTH socket addresses.\n- gh-131492: Fix a resource leak
+  when constructing a gzip.GzipFile with a filename fails, for example when passing
+  an invalid compresslevel.\n- gh-131325: Fix sendfile fallback implementation to
+  drain data after writing to transport in asyncio.\n- gh-129843: Fix incorrect argument
+  passing in warnings.warn_explicit().\n- gh-131204: Use monospace font from System
+  Font Stack for cross-platform support in difflib.HtmlDiff.\n- gh-131045: Fix issue
+  with __contains__, values, and pseudo-members for enum.Flag.\n- gh-130959: Fix pure-Python
+  implementation of datetime.time.fromisoformat() to reject times with spaces in fractional
+  part (for example, 12:34:56.400 +02:00), matching the C implementation. Patch by
+  Micha\u0142 Gorny.\n- gh-130637: Add validation for numeric response data in poplib.POP3.stat()
+  method\n- gh-130461: Remove .. index:: directives from the uuid module documentation.
+  These directives previously created entries in the general index for getnode() as
+  well as the uuid1(), uuid3(), uuid4(), and uuid5() constructor functions.\n- gh-130285:
+  Fix corner case for random.sample() allowing the counts parameter to specify an
+  empty population. So now, sample([], 0, counts=[]) and sample('abc', k=0, counts=[0,
+  0, 0]) both give the same result as sample([], 0).\n- gh-130250: Fix regression
+  in traceback.print_last().\n- gh-118761: Reverts a change in the previous release
+  attempting to make some stdlib imports used within the subprocess module lazy as
+  this was causing errors during __del__ finalizers calling methods such as terminate,
+  or kill, or send_signal.\n- gh-130164: Fixed failure to raise TypeError in inspect.Signature.bind()
+  for positional-only arguments provided by keyword when a variadic keyword argument
+  (e.g. **kwargs) is present.\n- gh-130151: Fix reference leaks in _hashlib.hmac_new()
+  and _hashlib.hmac_digest(). Patch by B\xE9n\xE9dikt Tran.\n- gh-129726: Fix gzip.GzipFile
+  raising an unraisable exception during garbage collection when referring to a temporary
+  object by breaking the reference loop with weakref.\n- gh-129583: Update bundled
+  pip to 25.0.1\n- gh-97850: Update the deprecation warning of importlib.abc.Loader.load_module().\n-
+  gh-129603: Fix bugs where sqlite3.Row objects could segfault if their inherited
+  description was set to None. Patch by Erlend Aasland.\n- gh-117779: Fix reading
+  duplicated entries in zipfile by name. Reading duplicated entries (except the last
+  one) by ZipInfo now emits a warning instead of raising an exception.\n- gh-128772:
+  Fix pydoc for methods with the __module__ attribute equal to None.\n- gh-92897:
+  Scheduled the deprecation of the check_home argument of sysconfig.is_python_build()
+  to Python 3.15.\n- gh-128703: Fix mimetypes.guess_type() to use default mapping
+  for empty Content-Type in registry.\n- gh-126037: xml.etree.ElementTree: Fix a crash
+  in Element.find, Element.findtext and Element.findall when the tag to find implements
+  an __eq__() method mutating the element being queried. Patch by B\xE9n\xE9dikt Tran.\n-
+  gh-127712: Fix handling of the secure argument of logging.handlers.SMTPHandler.\n-
+  gh-126033: xml.etree.ElementTree: Fix a crash in Element.remove when the element
+  is concurrently mutated. Patch by B\xE9n\xE9dikt Tran.\n- gh-125553: Fix round-trip
+  invariance for backslash continuations in tokenize.untokenize().\n- gh-101137: Mime
+  type text/x-rst is now supported by mimetypes.\n- gh-113238: Add Anchor to importlib.resources
+  (in order for the code to comply with the documentation)\n- gh-89039: When replace()
+  method is called on a subclass of datetime, date or time, properly call derived
+  constructor. Previously, only the base class\u2019s constructor was called.\n  Also,
+  make sure to pass non-zero fold values when creating subclasses in various methods.
+  Previously, fold was silently ignored.\nIDLE\n- gh-129873: Simplify displaying the
+  IDLE doc by only copying the text section of idle.html to idlelib/help.html. Patch
+  by Stan Ulbrych.\nDocumentation\n- gh-131417: Mention asyncio.Future and asyncio.Task
+  in generic classes list.\n- gh-125722: Require Sphinx 8.2.0 or later to build the
+  Python documentation. Patch by Adam Turner.\n- gh-129712: The wheel tags supported
+  by each macOS universal SDK option are now documented.\n- gh-46236: C API: Document
+  PyUnicode_RSplit(), PyUnicode_Partition() and PyUnicode_RPartition().\nCore and
+  Builtins\n- gh-131670: Fix anext() failing on sync __anext__() raising an exception.\n-
+  gh-130809: Fixed an issue where _PyFrame_LocalsToFast tries to write module level
+  values to hidden fasts.\n- gh-130775: Do not crash on negative column and end_column
+  in ast locations.\n- gh-130618: Fix a bug that was causing UnicodeDecodeError or
+  SystemError to be raised when using f-strings with lambda expressions with non-ASCII
+  characters. Patch by Pablo Galindo\n- gh-130163: Fix possible crashes related to
+  concurrent change and use of the sys module attributes.\n- gh-88887: Fixing multiprocessing
+  Resource Tracker process leaking, usually observed when running Python as PID 1.\n-
+  gh-116042: Fix location for SyntaxErrors of invalid escapes in the tokenizer. Patch
+  by Pablo Galindo\n- gh-128632: Disallow __classdict__ as the name of a type parameter.
+  Using this name would previously crash the interpreter in some circumstances.\n-
+  gh-125331: from __future__ import barry_as_FLUFL now works in more contexts, including
+  when it is used in files, with the -c flag, and in the REPL when there are multiple
+  statements on the same line. Previously, it worked only on subsequent lines in the
+  REPL, and when the appropriate flags were passed directly to compile(). Patch by
+  Pablo Galindo.\n- gh-107526: Revert converting vars, dir, next, getattr, and iter
+  to argument clinic.\n- gh-107674: Fixed performance regression in sys.settrace.\nC
+  API\n- gh-131740: Update PyUnstable_GC_VisitObjects to traverse perm gen.\nBuild\n-
+  gh-131865: The DTrace build now properly passes the CC and CFLAGS variables to the
+  dtrace command when utilizing SystemTap on Linux.\n- gh-130740: Ensure that Python.h
+  is included before stdbool.h unless pyconfig.h is included before or in some platform-specific
+  contexts.\n- gh-129838: Don\u2019t redefine _Py_NO_SANITIZE_UNDEFINED when compiling
+  with a recent GCC version and undefined sanitizer enabled.\n- gh-129660: Drop test_embed
+  from PGO training, whose contribution in recent versions is considered to be ignorable."
+ReleaseNotesUrl: https://docs.python.org/release/3.12.10/whatsnew/changelog.html#python-3-12-10
+ShortDescription: Python is a programming language that lets you work more quickly
+  and integrate your systems more effectively.
+Tags:
+- language
+- programming
+- programming-language
+- python
+- python3
+- script
+UpgradeBehavior: install
